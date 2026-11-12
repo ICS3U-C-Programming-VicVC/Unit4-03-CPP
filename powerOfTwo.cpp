@@ -2,7 +2,7 @@
 // .
 // Created by: Victor Victor-Calixte
 // Date: 09/16/26
-// Write what this program does.
+// This program calculates the power of the given numbers from the user
 
 
 #include<iostream>
