@@ -1,7 +1,7 @@
 // Copyright (c) 2026 Victor Victor-Calixte All rights reserved.
 // .
 // Created by: Victor Victor-Calixte
-// Date: 09/16/26
+// Date: 11/13/26
 // This program calculates the power of the given numbers from the user
 
 
@@ -12,7 +12,7 @@
 char const EXPO_MSG[] = ("Enter the Exponent number: ");
 char const BASE_MSG[] = ("Enter the base number: ");
 
-char const ERR_MSG[] = (" are invalid Inputs!\n (MUST BE POSITIVE INPUTS!)\n");
+char const ERR_MSG[] = (" are invalid Inputs!\n (MUST BE POSITIVE INTEGER!)\n");
 
 
 int main() {
@@ -39,7 +39,7 @@ int main() {
         float expoFlo = std::stof(expoStr);
 
         // Detecting decimals
-        if (base != baseFlo || expo != expoFlo) {
+        if (base != baseFlo || expo != expoFlo || expo < 0 || base < 0) {
             std::cout
             << "base: "
             << baseStr
