@@ -53,6 +53,12 @@ int main() {
             // Calculating the sum starting the counter at 0
             for (int counter = 0; counter < expo; counter += 1) {
                 sum_num *= base;
+                std::cout
+                << base
+                << " ^ "
+                << counter
+                << " = " << sum_num
+                << "\n";
             }
 
             // Displaying the sum to the user
